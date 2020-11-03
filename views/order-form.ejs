@@ -1,0 +1,139 @@
+<html lang="en">
+
+<%- include('header'); %> 
+
+<main role="main" class="container">
+    <!-- section inner form pages -->
+    <div id="inner-form-pages">
+        <div class="form-pages-column-1">
+            <h5>Please use the form below to complete your order</h5>
+            <br>
+
+            <form action="order-confirmation.html" method="GET">
+                <div class="form-group">
+                    <label for="bouquet-name" class="required">Bouquet Name</label>
+                    <select class="form-control" id="bouquet-name" required>
+                        <option></option>
+                        <option>Flower 1</option>
+                        <option>Flower 2</option>
+                        <option>Flower 3</option>
+                        <option>Flower 4</option>
+                        <option>Flower 5</option>
+                        <option>Flower 6</option>
+                        <option>Flower 7</option>
+                        <option>Flower 8</option>
+                      </select>
+                      <small class="form-text text-muted">Please select an option</small>
+                </div>
+                <div class="form-group">
+                    <label for="flower-qty" class="required">Quantity</label>
+                    <select class="form-control" id="flower-qty" required>
+                        <option></option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>25</option>
+                        <option>50</option>
+                        <option>75</option>
+                        <option>100</option>
+                        <option>150</option>
+                        <option>200</option>
+                        <option>250</option>
+                        <option>300</option>
+                        <option>500</option>
+                        <option>600</option>
+                        <option>750</option>
+                        <option>1000 or more</option>
+                      </select>
+                      <small class="form-text text-muted">Please select an option</small>
+
+                </div>
+                <div class="form-group">
+                    <label for="occasion" class="required">What is your Occasion?</label>
+                    <select class="form-control" id="occasion" required>
+                        <option></option>
+                        <option>Wedding</option>
+                        <option>Birthday</option>
+                        <option>Valentine Gift</option>
+                        <option>Corporate Event</option>
+                        <option>Hospital Gift</option>
+                        <option>Home Decoration</option>
+                        <option>Others</option>
+                    </select>
+                    <small class="form-text text-muted">Please select an option</small>
+                </div>
+                <div class="form-group">
+                    <label for="date" class="required">Delivery Date</label>
+                    <input type="date" value="2020-01-01" class="form-control" required>
+                    <small class="form-text text-muted">mmm/dd/yyy</small>
+                </div>
+                <div class="form-group">
+                    <label for="time" class="required">Delivery Time</label>
+                    <input type="time" value="12:30" class="form-control" id="time" required>
+                    <small class="form-text text-muted">hh:mm AM/PM</small>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="fullName" class="required">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                  </div>
+                <div class="form-group">
+                    <label for="email" class="required">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="required">Telephone</label>
+                    <input type="tel" name="telephone" id="phone" class="form-control" aria-describedby="helpId" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress" class="required">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="12 Main Street" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="city" class="required">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="City" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="state" class="required">State</label>
+                    <input type="text" class="form-control" id="state" placeholder="State" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Additional Request</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Please type any additional requests"></textarea>
+                  </div>
+                  <div class="form-group">
+                      <div class="form-check form-check-inline">
+                          <label class="form-check-label required">
+                              <input class="deliveryFee" type="checkbox" name="deliveryFee" id="deliveryFee" value="deliveryFee" required>  <span><strong>Delivery Fee:</strong></span> N1,500
+                          </label>
+                          <small class="form-text text-muted">Please tick the check box</small>
+                      </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check form-check">
+                        <label class="form-check-label required">
+                            <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue" required> 
+                            <span><strong>Delivery Terms:</strong></span>  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.Lorem ipsum dolor sit amet, consetetur 
+                            sadipscing elitr, sed diam.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+                        </label>
+                    </div>
+                </div>
+                  <div>
+                      <button type="submit" class="btn btn-custom">Submit</button>
+                  </div>
+            </form>
+        </div>
+        <div class="form-pages-column-2">
+        </div>
+        
+    </div>
+    <!-- end inner form pages -->
+    
+</main><!-- /.container -->
+
+  <%- include('footer'); %> 
+</html>
+
+
+
+
